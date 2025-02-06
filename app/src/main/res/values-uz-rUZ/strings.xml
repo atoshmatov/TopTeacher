@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TopTeacher</string>
+
+    // intro text
+    <string name="get_started">Hoziroq boshlash</string>
+    <string name="login">Kirish</string>
+    <string name="login_title">Xush kelibsiz</string>
+    <string name="email">Elektron pochta</string>
+    <string name="password">Parol</string>
+    <string name="google_text">Google bilan davom eting</string>
+    <string name="or_with_google">Yoki davom eting</string>
+    <string name="create_an_account">Hisob ochish</string>
+    <string name="tab_home">Asosiy</string>
+    <string name="tab_profile">Profil</string>
+</resources>

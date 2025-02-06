@@ -1,0 +1,311 @@
+[versions]
+# android-gradle-plugin-version
+agp = "8.7.3"
+
+# gms
+gmsPlugin = "4.4.2"
+
+# ksp
+ksp = "2.0.21-1.0.28"
+
+# kotlin-version
+kotlin = "2.1.0"
+
+# core-ktx-version
+coreKtx = "1.15.0"
+
+# appcompat-version
+appcompat = "1.7.0"
+
+# junit-version
+junit = "4.13.2"
+
+# espresso-core-version
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+
+# lifecycle-runtime-ktx-version
+lifecycleRuntimeKtx = "2.8.7"
+
+# activity-compose-version
+activityCompose = "1.10.0"
+
+# compose-bom-version
+composeBom = "2024.04.01"
+
+# work
+uiUtil = "1.7.6"
+
+# material icons extended
+materialIconsExtended = "1.7.6"
+
+# koin-version
+koin = "4.0.0"
+
+# ktor-version
+ktor = "2.3.8"
+ktorClientLogging = "2.3.8"
+
+# kotlinx-serialization
+kotlinxSerializationJson = "1.7.3"
+
+# immutable
+kotlinxCollectionsImmutable = "0.3.7"
+
+# kotlinx-datetime
+kotlinxDatetime = "0.6.1"
+
+# kotlin-coroutine
+kotlinxCoroutinesCore = "1.9.0"
+
+# room-database
+room_version = "2.6.1"
+
+# datastore
+androidxDataStore = "1.1.2"
+
+# lottie compose
+lottieCompose = "6.5.2"
+
+# coil3
+coil3 = "3.0.4"
+
+# timber
+timber = "5.0.1"
+
+# voyager
+voyagerVersion = "1.0.0-rc09"
+
+# chucker
+chucker = "4.0.0"
+
+# splash-screen
+splashscreen = "1.0.0"
+
+# accompanist
+accompanist = "0.34.0"
+
+# firebase
+firebase-bom = "33.8.0"
+
+# google service
+play-service = "19.2.0"
+
+# credentials
+credentials = "1.5.0-rc01"
+
+# google id
+google-id = "1.1.1"
+
+[libraries]
+# androidx-core-ktx
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# androidx-appcompat
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# testing
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+# lifecycle-runtime-ktx
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+
+# androidx-activity-compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+
+# androidx-compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+
+# androidx-ui-util
+androidx-ui-util = { module = "androidx.compose.ui:ui-util", version.ref = "uiUtil" }
+
+# androidx-material-icons-extended
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
+
+# koin
+koin-androidx-compose-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmodel", version.ref = "koin" }
+koin-android-workmanager = { group = "io.insert-koin", name = "koin-androidx-workmanager", version.ref = "koin" }
+koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+
+# ktor
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientLogging" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+
+# kotlinx-serialization-json
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+# immutable
+kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinxCollectionsImmutable" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
+
+# kotlinx-coroutines-core
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+
+# room-database
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
+androidx-room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room_version" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
+
+# dataStore
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "androidxDataStore" }
+androidx-dataStore-core = { group = "androidx.datastore", name = "datastore", version.ref = "androidxDataStore" }
+
+# lottie animation
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
+
+# coil
+coil-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil3" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3" }
+
+# timber
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+# voyager
+voyager-bottomsheet = { group = "cafe.adriel.voyager", name = "voyager-bottom-sheet-navigator", version.ref = "voyagerVersion" }
+voyager-transitions = { group = "cafe.adriel.voyager", name = "voyager-transitions", version.ref = "voyagerVersion" }
+voyager-viewmodel = { group = "cafe.adriel.voyager", name = "voyager-androidx", version.ref = "voyagerVersion" }
+voyager-tab = { group = "cafe.adriel.voyager", name = "voyager-tab-navigator", version.ref = "voyagerVersion" }
+voyager = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyagerVersion" }
+voyager-koin = { group = "cafe.adriel.voyager", name = "voyager-koin", version.ref = "voyagerVersion" }
+
+# chucker
+chucker = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker" }
+
+# androidx-splash-screen
+androidx-core-splash = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+
+# accompanist
+accompanist-systemui = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+
+# firebase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+
+# google-services
+google-play-service = { module = "com.google.android.gms:play-services-auth", version.ref = "play-service" }
+
+# androidx-credentials
+androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentials" }
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
+
+# android google ID
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "google-id" }
+
+
+
+[plugins]
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+gms = { id = "com.google.gms.google-services", version.ref = "gmsPlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+[bundles]
+# Compose Bundle
+compose = [
+    "androidx-compose-ui-tooling-preview",
+    "androidx-material-icons-extended",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-material3",
+    "androidx-activity-compose",
+    "androidx-compose-ui",
+    "androidx-ui-util",
+]
+
+# Compose Debug Bundle
+compose-debug = [
+    "androidx-compose-ui-tooling",
+    "androidx-compose-ui-test-manifest",
+]
+
+# Koin Dependency Injection Bundles
+koin-compose = [
+    "koin-androidx-compose-viewmodel",
+    "koin-android-workmanager",
+    "koin-androidx-compose",
+    "koin-android",
+    "koin-core",
+]
+
+# Room bundle
+room = [
+    # "androidx-room-compiler",
+    "androidx-room-runtime",
+    "androidx-room-paging",
+    "androidx-room-ktx",
+]
+
+# Ktor Networking Bundle
+ktor = [
+    "ktor-serialization-kotlinx-json",
+    "ktor-client-content-negotiation",
+    "ktor-client-logging",
+    "ktor-client-auth",
+    "ktor-client-core",
+    "ktor-client-cio",
+]
+
+# Coil bundle
+coil = [
+    "coil-okhttp",
+    "coil-compose",
+]
+
+# dataStore bundle
+dataStore = [
+    "androidx-datastore-preferences",
+    "androidx-dataStore-core",
+]
+
+# Kotlinx Coroutines
+coroutines = [
+    "kotlinx-coroutines-play-services",
+    "kotlinx-coroutines-core"
+]
+
+# Voyager Navigation Bundle
+voyager = [
+    "voyager-bottomsheet",
+    "voyager-transitions",
+    "voyager-viewmodel",
+    "voyager-koin",
+    "voyager-tab",
+    "voyager",
+]
+
+# Firebase
+firebase = [
+    "firebase-analytics",
+    "firebase-auth"
+]
+
+# Credentials
+credentials = [
+    "androidx-credentials-play-services-auth",
+    "androidx-credentials"
+]
+
+

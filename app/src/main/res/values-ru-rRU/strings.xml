@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TopTeacher</string>
+
+    // intro text
+    <string name="get_started">Начать сейчас</string>
+    <string name="login">Авторизоваться</string>
+    <string name="login_title">Добро пожаловать.</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="google_text">Продолжить с Google</string>
+    <string name="or_with_google">Или продолжить</string>
+    <string name="create_an_account">Завести аккаунт</string>
+    <string name="tab_home">Главная</string>
+    <string name="tab_profile">Профиль</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "888998219152",
+    "project_id": "top-teacher-25c73",
+    "storage_bucket": "top-teacher-25c73.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888998219152:android:850763d0fa7cab66687715",
+        "android_client_info": {
+          "package_name": "uz.toshmatov.bookpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888998219152-cv91on4thtmcv74mc53pb63q1v1ku6qu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.toshmatov.bookpro",
+            "certificate_hash": "7caf7acc0208f0fd99b25316705e6c341c6ba001"
+          }
+        },
+        {
+          "client_id": "888998219152-qmoedb6su5s7v0c9o3id69e8n8eq98r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdS_UpwiJveD8domzMVlb53j7xuxW-qlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888998219152-qmoedb6su5s7v0c9o3id69e8n8eq98r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
