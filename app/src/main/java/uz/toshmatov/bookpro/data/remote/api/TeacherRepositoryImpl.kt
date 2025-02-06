@@ -1,12 +1,10 @@
 package uz.toshmatov.bookpro.data.remote.api
 
 import com.google.firebase.Firebase
-import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.firestore
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
-import uz.toshmatov.bookpro.core.logger.logInfo
 import uz.toshmatov.bookpro.data.remote.models.Teacher
 import uz.toshmatov.bookpro.domain.repository.TeacherRepository
 

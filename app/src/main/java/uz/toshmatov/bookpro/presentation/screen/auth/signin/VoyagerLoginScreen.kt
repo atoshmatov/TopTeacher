@@ -2,7 +2,6 @@ package uz.toshmatov.bookpro.presentation.screen.auth.signin
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
@@ -35,7 +34,6 @@ import uz.toshmatov.bookpro.core.utils.Validator
 import uz.toshmatov.bookpro.core.utils.raw
 import uz.toshmatov.bookpro.presentation.screen.auth.signin.component.InputComponent
 import uz.toshmatov.bookpro.presentation.screen.auth.signin.intent.LoginEvent
-import uz.toshmatov.bookpro.presentation.screen.auth.signin.intent.LoginState
 import uz.toshmatov.bookpro.presentation.screen.main.VoyagerMainScreen
 
 class VoyagerLoginScreen : AndroidScreen() {

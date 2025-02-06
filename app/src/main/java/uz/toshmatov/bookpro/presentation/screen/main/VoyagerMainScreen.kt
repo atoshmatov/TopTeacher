@@ -20,12 +20,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.mutableDoubleStateOf
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -44,8 +41,6 @@ import uz.toshmatov.bookpro.core.uicomponent.SearTextField
 import uz.toshmatov.bookpro.core.uicomponent.makeToast
 import uz.toshmatov.bookpro.core.utils.drawable
 import uz.toshmatov.bookpro.data.remote.models.Teacher
-import uz.toshmatov.bookpro.presentation.screen.main.component.RatingBar
-import uz.toshmatov.bookpro.presentation.screen.main.component.RatingBarUpdate
 import uz.toshmatov.bookpro.presentation.screen.main.component.RatingDialog
 import uz.toshmatov.bookpro.presentation.screen.main.component.TeacherItem
 import uz.toshmatov.bookpro.presentation.screen.setting.VoyagerSettingScreen

@@ -1,3 +1,3 @@
-package uz.toshmatov.currency.presentation.main.tabscreen.setting.feature.language.intents
+package uz.toshmatov.bookpro.presentation.screen.setting.feature.language.intents
 
 sealed interface LanguageEvents {}
