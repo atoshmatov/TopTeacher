@@ -27,6 +27,12 @@ class OnboardingUtils(context: Context) {
             .apply()
     }
 
+    fun setLogout() {
+        pref.edit()
+            .putBoolean(IS_LOGIN, false)
+            .apply()
+    }
+
     fun clear() {
         pref.edit().clear().apply()
     }

@@ -2,9 +2,15 @@ package uz.toshmatov.bookpro.presentation.screen.intro
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -53,6 +59,10 @@ fun IntroScreenContent(
             .fillMaxSize()
             .background(TopTeacherColors.background)
     ) {
+        Spacer(
+            Modifier
+                .windowInsetsTopHeight(WindowInsets.statusBars)
+                .align(Alignment.TopCenter))
         HorizontalPager(state = pagerState) { page ->
             when (page) {
                 0 -> IntroPage(image = R.drawable.ic_intro_one)
@@ -71,6 +81,11 @@ fun IntroScreenContent(
                 .fillMaxWidth()
                 .align(Alignment.BottomCenter)
                 .padding(bottom = 8.dp), pagerState = pagerState
+        )
+        Spacer(
+            Modifier
+                .windowInsetsBottomHeight(WindowInsets.navigationBars)
+                .align(Alignment.BottomCenter)
         )
     }
 }

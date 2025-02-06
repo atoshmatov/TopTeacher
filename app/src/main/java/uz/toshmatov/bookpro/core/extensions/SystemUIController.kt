@@ -8,7 +8,7 @@ import uz.toshmatov.bookpro.core.theme.color.WHITE
 
 internal fun SystemUiController.applyTheme(isDarkTheme: Boolean) {
     val statusBarColor = if (isDarkTheme) BLACK else GRAY10
-    val navigationBarColor = if (isDarkTheme) DARK else WHITE
+    val navigationBarColor = if (isDarkTheme) DARK else GRAY10
 
     setSystemBarsColor(
         color = statusBarColor,

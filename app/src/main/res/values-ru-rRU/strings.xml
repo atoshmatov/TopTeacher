@@ -13,4 +13,26 @@
     <string name="create_an_account">Завести аккаунт</string>
     <string name="tab_home">Главная</string>
     <string name="tab_profile">Профиль</string>
+
+    <string name="uzbek_language">O‘zbekcha</string>
+    <string name="cyrillic_language">Ўзбекча</string>
+    <string name="english_language">English</string>
+    <string name="russian_language">Русский</string>
+
+    <string name="tab_setting">Настройки</string>
+
+    // settings text
+    <string name="settings_language">Язык</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_dark">Темный</string>
+    <string name="settings_light">Свет</string>
+    <string name="settings_system">Система</string>
+
+    <string name="home_search">поиск</string>
+    <string name="log_out">Выйти</string>
+    <string name="cancel">Отмена</string>
+    <string name="log_out_title">Выход</string>
+    <string name="log_out_confirm">Вы действительно хотите уйти?</string>
+
+
 </resources>

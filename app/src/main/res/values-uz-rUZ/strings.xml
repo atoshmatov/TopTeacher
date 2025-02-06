@@ -13,4 +13,27 @@
     <string name="create_an_account">Hisob ochish</string>
     <string name="tab_home">Asosiy</string>
     <string name="tab_profile">Profil</string>
+
+    <string name="uzbek_language">O‘zbekcha</string>
+    <string name="cyrillic_language">Ўзбекча</string>
+    <string name="english_language">English</string>
+    <string name="russian_language">Русский</string>
+
+    <string name="tab_setting">Sozlamalar</string>
+
+    // settings text
+    <string name="settings_language">Ilova Tili</string>
+    <string name="settings_theme">Mavzu</string>
+    <string name="settings_dark">Qorong\'i</string>
+    <string name="settings_light">Yorqin</string>
+    <string name="settings_system">Tizimlli</string>
+
+    <string name="home_search">qidirish</string>
+    <string name="log_out">Chiqish</string>
+
+    <string name="cancel">Bekor qilish</string>
+
+    <string name="log_out_title">Chiqish</string>
+    <string name="log_out_confirm">Haqiqatan ham chiqmoqchimisiz?</string>
+
 </resources>

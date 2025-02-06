@@ -17,4 +17,28 @@
     // main
     <string name="tab_home">Home</string>
     <string name="tab_profile">Profile</string>
+
+
+    // language text
+    <string name="uzbek_language">O‘zbekcha</string>
+    <string name="cyrillic_language">Ўзбекча</string>
+    <string name="english_language">English</string>
+    <string name="russian_language">Русский</string>
+
+
+    <string name="tab_setting">Settings</string>
+
+    // settings text
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_dark">Dark</string>
+    <string name="settings_light">Light</string>
+    <string name="settings_system">System</string>
+
+    <string name="home_search">search</string>
+    <string name="log_out">Log Out</string>
+    <string name="cancel">Cancel</string>
+    <string name="log_out_title">Exit</string>
+    <string name="log_out_confirm">Are you sure you want to exit?</string>
+
 </resources>

@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.gms)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -38,6 +39,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+//    bundle {
+//        language {
+//            enableSplit = false
+//        }
+//    }
     buildFeatures {
         compose = true
         buildConfig = true
@@ -130,4 +136,10 @@ dependencies {
 
     // google id
     implementation(libs.googleid)
+
+    // lingver
+    implementation(libs.lingver)
+
+    // gson
+    implementation(libs.gson)
 }

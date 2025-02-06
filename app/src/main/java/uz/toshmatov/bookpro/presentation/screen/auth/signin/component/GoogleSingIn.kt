@@ -1,6 +1,5 @@
 package uz.toshmatov.bookpro.presentation.screen.auth.signin.component
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

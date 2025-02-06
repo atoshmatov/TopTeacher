@@ -1,6 +1,7 @@
 package uz.toshmatov.bookpro.app
 
 import android.app.Application
+import com.yariksoffice.lingver.Lingver
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.core.context.stopKoin
@@ -13,6 +14,8 @@ class TopTeacherApp : Application() {
     override fun onCreate() {
         super.onCreate()
         Logger.setup(BuildConfig.DEBUG)
+
+        Lingver.init(this)
 
         startKoin {
             androidContext(this@TopTeacherApp)

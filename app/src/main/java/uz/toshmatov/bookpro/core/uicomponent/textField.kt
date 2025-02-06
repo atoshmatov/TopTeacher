@@ -133,3 +133,96 @@ fun TopTeacherTextField(
         )
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun SearTextField(
+    modifier: Modifier = Modifier,
+    @StringRes placeHolderResId: Int = string.home_search,
+    onValueChange: (String) -> Unit,
+    onFocus: () -> Unit = {},
+) {
+    var text by rememberSaveable { mutableStateOf("") }
+    val interactionSource = remember { MutableInteractionSource() }
+
+    BasicTextField(
+        value = text,
+        onValueChange = {
+            text = it
+            onValueChange(text)
+        },
+        modifier = modifier
+            .clip(RoundedCornerShape(12.dp))
+            .background(TopTeacherColors.bottomBar)
+            .onFocusChanged { focusState ->
+                if (focusState.isFocused) {
+                    onFocus()
+                }
+            },
+        singleLine = true,
+        textStyle = LocalTextStyle.current.copy(
+            color = TopTeacherColors.text,
+            fontSize = 16.sp,
+            fontWeight = FontWeight(400),
+        ),
+        interactionSource = interactionSource,
+        cursorBrush = SolidColor(TopTeacherColors.text)
+    ) { innerTextField ->
+        TextFieldDefaults.DecorationBox(
+            value = text,
+            innerTextField = innerTextField,
+            placeholder = {
+                Text(
+                    text = placeHolderResId.resource,
+                    color = TopTeacherColors.textSecondary,
+                    style = TopTeacherTypography.textMedium,
+                )
+            },
+            enabled = true,
+            singleLine = true,
+            colors = TextFieldDefaults.colors(
+                focusedLeadingIconColor = TopTeacherColors.icon,
+                unfocusedLeadingIconColor = TopTeacherColors.icon,
+                focusedContainerColor = TopTeacherColors.bottomBar,
+                unfocusedContainerColor = TopTeacherColors.bottomBar,
+                focusedIndicatorColor = TopTeacherColors.bottomBar,
+                unfocusedIndicatorColor = TopTeacherColors.bottomBar,
+                cursorColor = TopTeacherColors.text,
+                focusedTextColor = TopTeacherColors.text,
+                unfocusedTextColor = TopTeacherColors.text,
+                disabledTextColor = TopTeacherColors.textSecondary
+            ),
+            visualTransformation = VisualTransformation.None,
+            interactionSource = interactionSource,
+            leadingIcon = {
+                CurrencyIcon(
+                    image = drawable.ic_search,
+                    size = 16.dp,
+                    contentDescription = "search"
+                )
+            },
+            trailingIcon = {
+                AnimatedVisibility(
+                    visible = text.isNotBlank(),
+                    enter = fadeIn(),
+                    exit = fadeOut()
+                ) {
+                    CurrencyIcon(
+                        image = drawable.ic_close,
+                        size = 16.dp,
+                        contentDescription = "search",
+                        tint = TopTeacherColors.textSecondary,
+                        onClick = {
+                            text = ""
+                            onValueChange(text)
+                        }
+                    )
+                }
+            },
+            contentPadding = TextFieldDefaults.contentPaddingWithoutLabel(
+                top = TopTeacherDimensions.empty,
+                bottom = TopTeacherDimensions.empty,
+            ),
+        )
+    }
+}

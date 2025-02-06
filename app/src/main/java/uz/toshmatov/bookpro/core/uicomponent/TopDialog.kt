@@ -20,7 +20,7 @@ import uz.toshmatov.bookpro.core.utils.resource
 import uz.toshmatov.bookpro.core.utils.string
 
 @Composable
-fun CommetaDialog(
+fun TopDialog(
     modifier: Modifier = Modifier,
     isLoading: Boolean,
     @StringRes title: Int = 0,
@@ -40,13 +40,13 @@ fun CommetaDialog(
             .fillMaxWidth()
             .clip(RoundedCornerShape(28.dp))
             .shadow(elevation = 12.dp),
-        containerColor = TopTeacherColors.background,
+        containerColor = TopTeacherColors.itemBackground,
         title = {
             if (!isLoading) {
                 Text(
                     text = title.resource,
-                    style = TopTeacherTypography.textMedium,
-                    color = TopTeacherColors.textPrimary,
+                    style = TopTeacherTypography.buttonRegular,
+                    color = TopTeacherColors.text,
                 )
             }
         },
@@ -77,7 +77,7 @@ fun CommetaDialog(
                 CommetaTextButton(onClick = onDismiss) {
                     Text(
                         text = string.cancel.resource,
-                        style = TopTeacherTypography.labelSemiBold,
+                        style = TopTeacherTypography.textMedium,
                         color = TopTeacherColors.textSecondary,
                     )
                 }

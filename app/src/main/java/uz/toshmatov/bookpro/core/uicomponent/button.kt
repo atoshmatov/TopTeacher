@@ -2,15 +2,18 @@ package uz.toshmatov.bookpro.core.uicomponent
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,12 +24,13 @@ import uz.toshmatov.bookpro.core.theme.TopTeacherDimensions
 import uz.toshmatov.bookpro.core.theme.TopTeacherTypography
 import uz.toshmatov.bookpro.core.utils.drawable
 import uz.toshmatov.bookpro.core.utils.resource
+import uz.toshmatov.bookpro.core.utils.string
 
 @Composable
 fun CompletedButton(
     modifier: Modifier = Modifier,
     onCompleted: () -> Unit,
-    @StringRes textContent: Int,
+    @StringRes textContent: Int = string.login,
     enabled: Boolean = true,
 ) {
     Button(
