@@ -57,6 +57,8 @@ cd teachers-rating-app
 Run → Run 'app' tugmasini bosib, ilovani emulator yoki real qurilmada ishga tushiring.
 
 ---
+**Asosiy ekran:**
+![Main Screen](screenshots/intro.jpg)
 
 ## 📞 Aloqa
 Agar sizda savollar yoki takliflar bo‘lsa, quyidagi manzillar orqali bog‘lanishingiz mumkin:
