@@ -27,9 +27,6 @@ class LoginViewModel(
         }
     }
 
-    fun isLoggedIn(): Boolean =
-        authenticationManager.isLoggedIn()
-
     private fun loginWithFirebase(
         email: String,
         password: String,

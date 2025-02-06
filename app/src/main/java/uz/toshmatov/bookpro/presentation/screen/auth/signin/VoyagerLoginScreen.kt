@@ -21,6 +21,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.androidx.AndroidScreen
 import cafe.adriel.voyager.navigator.LocalNavigator
@@ -30,6 +31,7 @@ import uz.toshmatov.bookpro.core.image.AnimatedPreloader
 import uz.toshmatov.bookpro.core.theme.TopTeacherColors
 import uz.toshmatov.bookpro.core.theme.TopTeacherDimensions
 import uz.toshmatov.bookpro.core.uicomponent.LoadingScreen
+import uz.toshmatov.bookpro.core.uicomponent.makeToast
 import uz.toshmatov.bookpro.core.utils.Validator
 import uz.toshmatov.bookpro.core.utils.raw
 import uz.toshmatov.bookpro.presentation.screen.auth.signin.component.InputComponent
@@ -45,6 +47,8 @@ class VoyagerLoginScreen : AndroidScreen() {
         val viewModel = koinViewModel<LoginViewModel>()
         val state by viewModel.state.collectAsState()
 
+        val context = LocalContext.current
+
         if (state.isLoading) {
             LoadingScreen()
         } else {
@@ -53,9 +57,10 @@ class VoyagerLoginScreen : AndroidScreen() {
             )
         }
 
-        if (state.isLoginSuccess && !state.isLoading) {
+        if (state.isLoginSuccess && !state.isLoading)
             navigator.replaceAll(VoyagerMainScreen())
-        }
+
+        if (state.error != "") context.makeToast(state.error)
     }
 }
 

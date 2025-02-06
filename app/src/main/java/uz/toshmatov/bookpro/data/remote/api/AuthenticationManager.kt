@@ -6,10 +6,6 @@ import com.google.firebase.auth.auth
 class AuthenticationManager {
     private val auth = Firebase.auth
 
-    fun isLoggedIn(): Boolean {
-        return auth.currentUser != null
-    }
-
     fun loginWithFirebase(
         email: String,
         password: String,
@@ -29,10 +25,4 @@ class AuthenticationManager {
     fun logOut() {
         auth.signOut()
     }
-}
-
-interface AuthResponse {
-    object Success : AuthResponse
-    object Loading : AuthResponse
-    data class Error(val message: String) : AuthResponse
 }
