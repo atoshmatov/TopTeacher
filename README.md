@@ -59,6 +59,19 @@ Run → Run 'app' tugmasini bosib, ilovani emulator yoki real qurilmada ishga tu
 ---
 **Asosiy ekran:**
 <img src="screenshots/intro.jpg" width="300">
+<img src="screenshots/screen_4.jpg" width="300">
+<img src="screenshots/screen_3.jpg" width="300">
+<img src="screenshots/screen_7.jpg" width="300">
+<img src="screenshots/screen_8.jpg" width="300">
+<img src="screenshots/screen_9.jpg" width="300">
+<img src="screenshots/screen_10.jpg" width="300">
+<img src="screenshots/screen_11.jpg" width="300">
+<img src="screenshots/screen_12.jpg" width="300">
+<img src="screenshots/screen_13.jpg" width="300">
+<img src="screenshots/screen_1.jpg" width="300">
+<img src="screenshots/screen_2.jpg" width="300">
+<img src="screenshots/screen_5.jpg" width="300">
+<img src="screenshots/screen_6.jpg" width="300">
 
 ## 📞 Aloqa
 Agar sizda savollar yoki takliflar bo‘lsa, quyidagi manzillar orqali bog‘lanishingiz mumkin:
