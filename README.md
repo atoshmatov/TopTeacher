@@ -45,8 +45,8 @@ Ilovada quyidagi texnologiyalar ishlatilgan:
 
 1️⃣ **Repository’ni klonlash:**
 ```bash
-git clone https://github.com/username/teachers-rating-app.git
-cd teachers-rating-app
+git clone https://github.com/atoshmatov/TopTeacher.git
+cd TopTeacher
 ```
 
 2️⃣ **Android Studio’da ochish**
